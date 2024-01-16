@@ -1,0 +1,108 @@
+package org.exemple.data.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+
+import java.time.ZonedDateTime;
+import java.util.List;
+
+@Builder
+@AllArgsConstructor
+public class ProjectDTO {
+
+    private int id;
+    private String description;
+    private String descriptionHtml;
+    private String name;
+    private String nameWithNamespace;
+    private String path;
+    private String pathWithNamespace;
+    private ZonedDateTime createdAt;
+    private ZonedDateTime updatedAt;
+    private String defaultBranch;
+    private List<String> tagList;
+    private List<String> topics;
+    private String sshUrlToRepo;
+    private String httpUrlToRepo;
+    private String webUrl;
+    private String readmeUrl;
+    private String avatarUrl;
+    private int forksCount;
+    private int starCount;
+    private ZonedDateTime lastActivityAt;
+    private NamespaceDTO namespace;
+    private String containerRegistryImagePrefix;
+    private LinksDTO links;
+    private boolean packagesEnabled;
+    private boolean emptyRepo;
+    private boolean archived;
+    private String visibility;
+    private boolean resolveOutdatedDiffDiscussions;
+    private ContainerExpirationPolicyDTO containerExpirationPolicy;
+    private boolean issuesEnabled;
+    private boolean mergeRequestsEnabled;
+    private boolean wikiEnabled;
+    private boolean jobsEnabled;
+    private boolean snippetsEnabled;
+    private boolean containerRegistryEnabled;
+    private boolean serviceDeskEnabled;
+    private boolean canCreateMergeRequestIn;
+    private String issuesAccessLevel;
+    private String repositoryAccessLevel;
+    private String mergeRequestsAccessLevel;
+    private String forkingAccessLevel;
+    private String wikiAccessLevel;
+    private String buildsAccessLevel;
+    private String snippetsAccessLevel;
+    private String pagesAccessLevel;
+    private String analyticsAccessLevel;
+    private String containerRegistryAccessLevel;
+    private String securityAndComplianceAccessLevel;
+    private Boolean emailsDisabled;
+    private Boolean emailsEnabled;
+    private boolean sharedRunnersEnabled;
+    private boolean groupRunnersEnabled;
+    private boolean lfsEnabled;
+    private int creatorId;
+    private String importUrl;
+    private String importType;
+    private String importStatus;
+    private int openIssuesCount;
+    private int ciDefaultGitDepth;
+    private boolean ciForwardDeploymentEnabled;
+    private boolean ciForwardDeploymentRollbackAllowed;
+    private boolean ciAllowForkPipelinesToRunInParentProject;
+    private boolean ciJobTokenScopeEnabled;
+    private boolean ciSeparatedCaches;
+    private boolean publicJobs;
+    private int buildTimeout;
+    private String autoCancelPendingPipelines;
+    private String ciConfigPath;
+    private List<Object> sharedWithGroups;
+    private boolean onlyAllowMergeIfPipelineSucceeds;
+    private Boolean allowMergeOnSkippedPipeline;
+    private boolean restrictUserDefinedVariables;
+    private boolean requestAccessEnabled;
+    private boolean onlyAllowMergeIfAllDiscussionsAreResolved;
+    private boolean removeSourceBranchAfterMerge;
+    private boolean printingMergeRequestLinkEnabled;
+    private String mergeMethod;
+    private String squashOption;
+    private boolean enforceAuthChecksOnUploads;
+    private String suggestionCommitMessage;
+    private String mergeCommitTemplate;
+    private String squashCommitTemplate;
+    private String issueBranchTemplate;
+    private boolean autoDevopsEnabled;
+    private String autoDevopsDeployStrategy;
+    private boolean autocloseReferencedIssues;
+    private boolean keepLatestArtifact;
+    private Object runnerTokenExpirationInterval;
+    private String externalAuthorizationClassificationLabel;
+    private boolean requirementsEnabled;
+    private String requirementsAccessLevel;
+    private boolean securityAndComplianceEnabled;
+    private List<Object> complianceFrameworks;
+    private PermissionsDTO permissions;
+
+}

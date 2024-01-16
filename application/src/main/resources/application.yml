@@ -1,0 +1,5 @@
+token: "glpat-LB3Gd3jjvT46Yi1P_1ep"
+
+adapters:
+  external:
+    gitlab: "https://gitlab.univ-nantes.fr"
